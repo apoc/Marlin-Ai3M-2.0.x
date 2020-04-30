@@ -134,11 +134,8 @@
 #define Y_MAX_PIN          -1
 #define Z_MAX_PIN          -1
 
-<<<<<<< HEAD
 // Fans
 #define FAN_PIN             9
-#define FAN2_PIN           44
-#define ORIG_E0_AUTO_FAN_PIN 44
 #define CONTROLLER_FAN_PIN  7
 
 // Heaters
@@ -168,12 +165,13 @@
   	#if NUM_SERVOS > 3
   		#define SERVO3_PIN    4
   	#endif
-=======
+
+	#endif
+
   // LCD Display output pins
   #if BOTH(NEWPANEL, PANEL_ONE)
     #undef LCD_PINS_D6
     #define LCD_PINS_D6                       57
->>>>>>> marlin/2.0.x
   #endif
 #else // Trigorilla 1.1
   #ifdef NUM_SERVOS
@@ -183,7 +181,6 @@
       #define SERVO1_PIN 4
     #endif
 
-<<<<<<< HEAD
     #if NUM_SERVOS > 2
       #define SERVO2_PIN 11
     #endif
@@ -191,7 +188,9 @@
     #if NUM_SERVOS > 3
       #define SERVO3_PIN 6
     #endif
-=======
+
+	#endif
+
   // LCD Display input pins
   #if ENABLED(NEWPANEL)
     #if ANY(VIKI2, miniVIKI)
@@ -208,7 +207,6 @@
     #define BEEPER_PIN                        33
     #undef DOGLCD_A0
     #define DOGLCD_A0                         42
->>>>>>> marlin/2.0.x
   #endif
 #endif // #if TRIGORILLA_VERSION
 
