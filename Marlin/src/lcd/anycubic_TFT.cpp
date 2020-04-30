@@ -126,13 +126,9 @@ void AnycubicTFTClass::Setup() {
 }
 
 void AnycubicTFTClass::WriteOutageEEPromData() {
-  int pos=E2END-256;
-
 }
 
 void AnycubicTFTClass::ReadOutageEEPromData() {
-  int pos=E2END-256;
-
 }
 
 void AnycubicTFTClass::KillTFT()
