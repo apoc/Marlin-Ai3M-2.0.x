@@ -726,7 +726,7 @@ void AnycubicTFTClass::StateHandler()
 void AnycubicTFTClass::FilamentRunout()
 {
   #if ENABLED(ANYCUBIC_FILAMENT_RUNOUT_SENSOR)
-    FilamentTestStatus=READ(19)&0xff;
+    FilamentTestStatus=READ(FIL_RUNOUT_PIN) & 0xff;
 
     if(FilamentTestStatus>FilamentTestLastStatus) {
       // filament sensor pin changed, save current timestamp.
